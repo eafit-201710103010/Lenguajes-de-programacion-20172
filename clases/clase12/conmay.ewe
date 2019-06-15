@@ -1,0 +1,37 @@
+inicio:
+   cero:=0
+   uno:=1
+   amin:=97
+   zmin:=122
+   base:=10 #equ cadena M[10]
+   desp:=32
+   #Leer la cadena
+   lon:= 256
+   readStr(cadena,lon)
+   i:=cero
+
+ciclo:    dir:= base + i
+          cadenai := M[dir +0]
+	  if cadenai = cero then goto finciclo
+	  if cadenai < amin then goto fintest
+	  if cadenai > zmin then goto fintest
+          cadenai:=cadenai- desp
+	  M[dir + 0]:=cadenai
+
+fintest: i:= i + uno
+         goto ciclo
+
+finciclo:  writeStr(cadena)
+fin: halt
+equ cero    M[0]
+equ uno     M[1]
+equ amin    M[2]
+equ zmin    M[3]
+equ base    M[4]
+equ dir     M[5]
+equ cadenai M[6]
+equ i       M[7]
+equ lon     M[8]
+equ desp     M[9]
+equ cadena  M[10]
+	 

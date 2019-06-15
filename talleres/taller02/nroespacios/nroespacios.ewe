@@ -1,0 +1,32 @@
+inicio:
+        lon:=100
+	cero:=0
+        readStr(cadena,lon)
+	contador:= cero
+	espacio:=32
+	uno:=1
+	base:=9
+	i:=cero
+loop:
+     dir:= base + i
+     cadenai:= M[dir +0]
+     if cadenai = cero then goto finciclo
+     if cadenai  <> espacio then goto fintest
+     contador := contador + uno
+     goto fintest
+     
+fintest: i:=i+ uno
+         goto loop
+
+finciclo: writeInt(contador)
+          halt
+equ cero     M[0]
+equ uno      M[1]
+equ contador M[2]
+equ espacio  M[3]
+equ base     M[4]
+equ lon      M[5]
+equ i        M[6]
+equ dir      M[7]
+equ cadenai  M[8]
+equ cadena   M[9]

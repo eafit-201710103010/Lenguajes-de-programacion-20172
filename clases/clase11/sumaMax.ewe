@@ -1,0 +1,27 @@
+inicio:
+       readInt(n)
+       readInt(max)
+       uno  := 1
+       cero := 0
+       i    := uno
+       sum  := cero
+
+ciclo:
+      if i> n then goto finciclo
+      if sum > max then goto finciclo
+      sum :=sum + i
+      i:= i + uno
+      goto ciclo
+
+finciclo:
+	writeInt(sum)
+	
+fin: halt
+
+equ cero M[0]
+equ uno  M[1]
+equ n    M[2]
+equ max  M[3]
+equ i    M[4]
+equ sum  M[5]
+       

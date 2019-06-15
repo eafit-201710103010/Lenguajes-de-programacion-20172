@@ -1,0 +1,56 @@
+inicio: lon:= 200
+        readStr(cadena,lon)
+	base:=16 
+	longitud:= 0
+	i:=0
+	j:=0
+	cero:=0
+	uno:=1
+	dos:=2
+
+loop:
+  dir:= base + i
+  cadenai:= M[dir +0]
+  if cadenai= cero then goto finciclo1
+  longitud := longitud + uno
+  i:= i+ uno
+  goto loop
+
+finciclo1:
+aux:= longitud * dos
+b:=aux -uno
+
+goto loop2
+
+loop2:
+dir1:=base + j
+dir2:= base + b
+if j>b then goto finciclo
+cadenaa:= M[dir1+0]
+M[dir2+0]:= cadenaa
+goto fintest
+
+fintest:
+         b:= b - uno
+	 j:= j + uno
+	 goto loop2
+
+finciclo: writeStr(cadena)
+          halt
+
+equ cero     M[0]
+equ uno      M[1]
+equ i        M[2]
+equ j        M[3]
+equ b        M[4]
+equ dir      M[5]
+equ dir1     M[6]
+equ dir2     M[7]
+equ cadenaa  M[8]
+equ cadenai  M[9]
+equ base     M[10]
+equ lon      M[11]
+equ longitud M[12]
+equ dos      M[13]
+equ aux      M[14]
+equ cadena   M[16]

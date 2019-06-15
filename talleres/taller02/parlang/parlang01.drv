@@ -1,0 +1,13 @@
+P => aPbP
+  => acPdPbP
+  => acdPbP
+  => acdbP
+  => acdbaPbP
+  => acdbabP
+  => acdbabaPbP
+  => acdbabacPdPbP
+  => acdbabacdPbP
+  => acdbabacdbP
+  => acdbabacdbcPdP
+  => acdbabacdbcdP
+  => acdbabacdbcd

@@ -1,0 +1,61 @@
+inicio:  lon:=100
+         readStr(cadena,lon)
+	 base:=20
+	 cero:=0
+	 uno:=1
+	 dos:=2
+         i:=0
+	 j:=1
+	 infmin:=97
+	 supmin:=122
+	 infmay:=65
+	 supmay:=90
+	 longitud:=0
+	 buenas:=0
+loop:
+dir1:= base + i
+dir2:= base + j
+cadenai:=M[dir1+0]
+cadenaj:=M[dir2+0]
+if cadenai = cero then goto finciclo
+if cadenaj = cero then goto finciclo
+longitud:=longitud + uno
+if cadenai < infmin then goto fintest
+if cadenai > supmin then goto fintest
+if cadenaj < infmay then goto fintest
+if cadenaj > supmay then goto fintest
+buenas := buenas + uno
+goto fintest
+
+fintest:
+        i := i + dos
+        j := j + dos
+	goto loop
+	
+finciclo:
+     malas:= longitud - buenas
+     writeInt(longitud)
+     writeInt(buenas)
+     writeInt(malas)
+     halt
+
+equ cero        M[0]
+equ uno         M[1]
+equ dos         M[2]
+equ buenas      M[3]
+equ malas       M[4]
+equ longitud    M[5]
+equ i           M[6]
+equ j           M[7]
+equ dir1        M[8]
+equ dir2        M[9]
+equ cadenai     M[10]
+equ cadenaj     M[11]
+equ base        M[12]
+equ infmin      M[13]
+equ infmay      M[14]
+equ supmin      M[15]
+equ supmay      M[16]
+equ lon         M[17]
+equ cadena      M[20]
+

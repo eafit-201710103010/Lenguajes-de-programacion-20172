@@ -1,0 +1,15 @@
+Arbol de la derivacion de "aaabab"
+( S  a
+    (T  a
+        (T   a
+	    (T   b
+	         (U  a
+		    (T  b
+		        (U  
+	                 )
+		     )
+		  )
+	     )
+	  )
+      )
+)      

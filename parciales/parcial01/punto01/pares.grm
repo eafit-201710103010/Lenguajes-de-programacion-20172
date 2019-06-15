@@ -1,0 +1,11 @@
+Gramatica para cadenas con ab pares y finalizadas en c
+{
+ {S,A,B,C},
+ {a,b,c},
+ {S-> ABABC | C | ,
+  A-> a,
+  B-> bABAB | b,
+  C-> c
+  },
+  S
+}  

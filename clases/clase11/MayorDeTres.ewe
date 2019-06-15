@@ -1,0 +1,21 @@
+inicio:
+         readInt(a)
+	 readInt(b)
+	 readInt(c)
+c1:         if a<=b then goto sic1
+c2:         if a<=c then goto sic2
+            writeInt(a)
+	    goto fin
+sic1:       
+c3:    if b<=c then goto sic3
+        writeInt(b)
+	goto fin
+sic2:
+sic3:
+      writeInt(c)
+       goto fin
+      
+fin:   halt
+equ a M[0]
+equ b M[1]
+equ c M[2]

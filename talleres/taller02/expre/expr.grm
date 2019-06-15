@@ -1,0 +1,9 @@
+{
+ {E,O,P},
+ {a,b,i,w,s,r,m,d},
+ { E -> POP | aEbOP | aEbOE, 
+   P -> i | w | iOP | wOP,
+   O -> s | r | m | d
+  },
+  E
+}

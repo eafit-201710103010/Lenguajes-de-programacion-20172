@@ -1,0 +1,8 @@
+Arbol de la derivacion de la cadena ababc
+
+(S  (A a)
+    (B b)
+    (A a)
+    (B b)
+    (C c)
+)    

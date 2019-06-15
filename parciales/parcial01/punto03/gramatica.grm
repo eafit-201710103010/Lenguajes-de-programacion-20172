@@ -1,0 +1,13 @@
+Gramatica para el diagrama del punto 3
+
+{
+  {S,X,Y,Z},
+  {x,y,z},
+  {S-> Z | XZ | YZ ,
+   X-> xX | xY | x ,
+   Y-> yY | yX | y ,
+   Z-> z | zZ
+   },
+   S
+ }
+   

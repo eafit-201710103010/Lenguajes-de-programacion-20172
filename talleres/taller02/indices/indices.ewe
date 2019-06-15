@@ -1,0 +1,30 @@
+inicio: lon:=1
+        lon2:=100
+        readStr(indice,lon)
+	readStr(cadena,lon2)
+        cero:=0
+	uno:=1
+	i:=cero
+	base:=10
+loop:
+dir:=base+i
+cadenai:=M[dir+0]
+if cadenai = cero then goto finciclo
+if cadenai <> indice then goto fintest
+writeInt(i)
+goto fintest
+
+fintest: i:= i + uno
+       goto loop
+
+finciclo: halt
+equ cero    M[0]
+equ uno     M[1]
+equ lon     M[2]
+equ lon2    M[3]
+equ i       M[4]
+equ base    M[5]
+equ dir     M[6]
+equ cadenai M[7]
+equ indice  M[8]
+equ cadena  M[10]

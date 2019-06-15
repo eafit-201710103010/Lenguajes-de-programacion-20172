@@ -1,0 +1,10 @@
+Arbol de la derivacion de xyzz
+
+(S  (X  x
+       (Y  y
+       )
+     )  
+    (Z  z
+       (Z  z)
+     )
+)     

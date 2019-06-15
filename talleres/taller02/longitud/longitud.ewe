@@ -1,0 +1,23 @@
+inicio:  lon:=100
+         readStr(cadena,lon)
+         cero:=0
+	 uno:=1
+	 cont:=cero
+         i:=cero
+	 
+loop:
+  cadenai:=M[i+0]
+  if cadenai=cero then goto finciclo
+  cont:= cont + uno
+  i:=i+uno
+  goto loop
+
+finciclo: writeInt(cont)
+          halt
+equ cadena  M[0]
+equ cero    M[101]
+equ uno     M[102]
+equ cadenai M[103]
+equ lon     M[104]
+equ cont    M[105]
+equ i       M[106]

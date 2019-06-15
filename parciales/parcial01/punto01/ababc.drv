@@ -1,0 +1,8 @@
+Derivacion de la cadena "ababc"
+
+S=>ABABC
+ =>aBABC
+ =>abABC
+ =>abaBC
+ =>ababC
+ =>ababc

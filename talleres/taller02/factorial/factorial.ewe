@@ -1,0 +1,17 @@
+inicio: readInt(a)
+        res:=1
+	i := 1
+	uno:= 1
+loop:
+if i > a then goto finloop
+res:= res * i
+i:= i+ uno
+goto loop
+
+finloop: writeInt(res)
+         halt
+
+equ a   M[0]
+equ res M[1]
+equ i   M[2]
+equ uno M[3]

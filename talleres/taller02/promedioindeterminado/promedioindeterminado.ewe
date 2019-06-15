@@ -1,0 +1,23 @@
+inicio:
+cero:=0
+uno:=1
+suma:=0
+dividirpor:=0
+loop:
+readInt(a)
+if a<cero then goto end
+suma:=suma+a
+dividirpor:=dividirpor+uno
+goto loop
+
+end:
+prom:=suma/dividirpor
+writeInt(prom)
+halt
+
+equ cero       M[0]
+equ uno        M[1]
+equ suma       M[2]
+equ dividirpor M[3]
+equ a          M[4]
+equ prom       M[5]

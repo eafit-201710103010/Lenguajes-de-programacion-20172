@@ -1,0 +1,89 @@
+inicio:   readInt(base)
+          readInt(n)
+	  i:=0
+	  cero:=0
+	  uno:=1
+	  dos:=2
+	  tres:=3
+	  cuatro:=4
+	  total:=0
+	  ast1:="*"
+	  ast2:="**"
+	  ast3:="***"
+	  ast4:="****"
+ciclo:
+if i>= n then goto finciclo
+readInt(valor)
+res:=valor%base
+res:=res+uno
+if res = uno then goto print1
+if res = dos then goto print2
+if res = tres then goto print3
+if res = cuatro then goto print4
+
+print1:
+writeStr(ast1)
+total:=total+cero
+i:=i+uno
+goto ciclo
+
+print2:
+writeStr(ast2)
+total:=total+uno
+i:=i+uno
+goto ciclo
+
+print3:
+writeStr(ast3)
+total:=total+dos
+i:=i+uno
+goto ciclo
+
+print4:
+writeStr(ast4)
+total:=total+tres
+i:=i+uno
+goto ciclo
+
+
+finciclo:
+tot:=total%base
+tot:=tot+uno
+if tot=uno then goto uno
+if tot=dos then goto dos
+if tot=tres then goto tres
+if tot=cuatro then goto cuatro
+uno:
+writeStr(ast1)
+goto fin
+
+dos:
+writeStr(ast2)
+goto fin
+
+tres:
+writeStr(ast3)
+goto fin
+
+cuatro:
+writeStr(ast4)
+goto fin
+
+fin: halt
+
+equ cero  M[0]
+equ uno   M[1]
+equ dos   M[3]
+equ tres  M[4]
+equ base  M[5]
+equ valor M[6]
+equ n     M[7]
+equ res   M[8]
+equ total M[9]
+equ tot   M[10]
+equ i     M[11]
+equ ast1  M[12]
+equ ast2  M[17]
+equ ast3  M[24]
+equ ast4  M[30]
+equ cuatro M[40]

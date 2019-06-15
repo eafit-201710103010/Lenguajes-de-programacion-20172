@@ -1,0 +1,24 @@
+inicio:
+       readInt(a)
+       readInt(b)
+       readInt(c)
+       readInt(d)
+       cero:=0
+       uno:=1
+
+c1: if a>=b then goto nop
+c2: if b>=c then goto nop
+c3: if c>=d then goto nop
+writeInt(uno)
+goto fin
+
+nop: writeInt(cero)
+goto fin
+
+fin: halt
+equ a    M[0]
+equ b    M[1]
+equ c    M[2]
+equ d    M[3]
+equ uno  M[4]
+equ cero M[5]

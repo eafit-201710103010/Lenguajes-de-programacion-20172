@@ -1,0 +1,20 @@
+Arbol dela derivacion de bbaaabab
+(S  b
+   (S  b
+      (S  a
+         (T  a
+	    (T   a
+	        (T   b
+		    (U   a
+		        (T  b
+			    (U
+			    )
+			 )
+		     )
+		  )
+	     )
+	  )
+	)
+     )
+ )    
+     

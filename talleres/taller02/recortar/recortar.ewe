@@ -1,0 +1,43 @@
+inicio: lon:= 100
+        readStr(cadena,lon)
+        base:=11
+	basen:=200
+	i:=0
+	espacio:=32
+	cad:= 0
+	cero:= 0
+	uno:= 1
+	M[basen+0]:=nueva
+loop:
+dir:= base + i
+aux := M[dir + 0]
+if aux = cero then goto finciclo
+if cad = uno then goto trad
+if aux = espacio then goto var
+goto trad
+
+trad:
+cad:=1
+M[basen + 0]:= aux 
+basen:=basen+ uno
+goto var
+
+var:
+i:= i + uno
+goto loop
+
+finciclo: writeStr(nueva)
+           halt
+
+equ cero    M[0]
+equ uno     M[1]
+equ i       M[2]
+equ basen   M[3]
+equ base    M[4]
+equ aux     M[5]
+equ cad     M[6]
+equ lon     M[7]
+equ espacio M[8]
+equ dir     M[9]
+equ cadena  M[11]
+equ nueva   M[200]

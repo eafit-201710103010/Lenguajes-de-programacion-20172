@@ -1,0 +1,25 @@
+inicio:
+readInt(veces)
+sum:=0
+uno:=1
+cero:=0
+inicio:=veces
+
+ciclo:
+if veces=cero then goto end
+readInt(a)
+sum:=sum+a
+veces:=veces-uno
+goto ciclo
+
+end:
+prom:=sum/inicio
+writeInt(prom)
+halt
+equ veces M[0]
+equ sum   M[1]
+equ uno   M[2]
+equ prom  M[3]
+equ a     M[4]
+equ cero  M[5]
+equ inicio M[6]

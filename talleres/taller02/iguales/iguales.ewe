@@ -1,0 +1,53 @@
+inicio: lon:= 100
+        readStr(cadena, lon)
+	readStr(cadena1,lon)
+	uno:=1
+	cero:=0
+	i:=0
+	base1:=12
+	base2:=200
+	son:=1
+
+loop:
+dir1:= base1 + i
+dir2:= base2 + i
+cad1:= M[dir1+0]
+cad2:= M[dir2+0]
+if cad1 = cero then goto fintemp
+if cad1 <> cad2 then goto noson
+i:=i+uno
+goto loop
+
+fintemp:
+if cad2=cero then goto finciclo
+goto noson
+
+noson:
+son:= 0
+goto finciclo
+
+finciclo:
+if son = cero then goto nop
+r:="Son iguales"
+goto fin
+
+nop: r:="No son iguales"
+goto fin
+
+fin: writeStr(r)
+halt
+
+equ cero     M[0]
+equ uno      M[1]
+equ i        M[2]
+equ lon      M[3]
+equ son      M[4]
+equ dir1     M[5]
+equ dir2     M[6]
+equ cad1     M[7]
+equ cad2     M[8]
+equ base1    M[9]
+equ base2    M[10]
+equ cadena   M[12]
+equ cadena1  M[200]
+equ r        M[300]
